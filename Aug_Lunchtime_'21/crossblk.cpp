@@ -11,8 +11,8 @@ int main(){
     vector<int> v(n);
     for(auto &it:v)cin>>it;
     int ans=0,maxx=-1;
-    for(int i=n-1;i>0;i--){
-      if(v[i]>maxx){
+    for(int i=n-1;i>0;i--){ //we traverse from the end for easy computation
+      if(v[i]>maxx){ 
         ans++;
         maxx=v[i];
       }
